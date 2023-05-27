@@ -1,7 +1,7 @@
 <?php
 
 // Replace this with your own email address
-$to = 'joefrey.mahusay@gmail.com';
+$to = 'ikatschi@proton.me';
 
 function url(){
   return sprintf(
@@ -41,7 +41,7 @@ if($_POST) {
    $mail = mail($to, $subject, $message, $headers);
 
 	if ($mail) { echo "OK"; }
-   else { echo "Something went wrong. Please try again."; }
+   else { echo "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."; }
 
 }
 
