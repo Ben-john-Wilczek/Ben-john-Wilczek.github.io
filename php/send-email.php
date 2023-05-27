@@ -41,7 +41,7 @@ if($_POST) {
    $mail = mail($to, $subject, $message, $headers);
 
 	if ($mail) { echo "OK"; }
-   else { echo "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es erneut."; }
+   else { echo "Something went wrong. Please try again."; }
 
 }
 
