@@ -9,7 +9,7 @@ $(function() {
 		if ($('#contactForm').length > 0 ) {
 			$( "#contactForm" ).validate( {
 				rules: {
-					name: "required",
+					name: "erforderlich",
 					email: {
 						required: true,
 						email: true
@@ -20,14 +20,14 @@ $(function() {
 					}
 				},
 				messages: {
-					name: "Please enter your name",
-					email: "Please enter a valid email address",
-					message: "Please enter a message"
+					name: "Bitte geben Sie Ihren Namen ein",
+					email: "Bitte geben Sie eine gültige E-Mail Adresse ein",
+					message: "Bitte geben Sie eine Nachricht ein"
 				},
 				/* submit via ajax */
 				submitHandler: function(form) {		
-					var $submit = $('.submitting'),
-						waitText = 'Submitting...';
+					var $submit = $('.Senden'),
+						waitText = 'sendet...';
 
 					$.ajax({   	
 				      type: "POST",
